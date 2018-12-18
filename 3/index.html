@@ -14,6 +14,19 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style media="screen">
+      #row-3{
+        transition: 1s;
+      }
+      h1 {
+        font-size: 1em;
+      }
+
+      .section > h1 {
+        font-size: 2em;
+      }
+
+    </style>
   </head>
   <body>
     <h1> Hey !! </h1>
@@ -78,6 +91,12 @@
       $('h1').click(function() {
         sumar();
       })
+
+      $("#row-3").on("click", function() {
+        $("#row-3").css("background-color", "gray");
+      })
+
+        
     </script>
   </body>
 </html>
